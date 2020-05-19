@@ -55,7 +55,7 @@ public:
     //==============================================================================
     void getStateInformation (MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
-    float limiterThresh = 1, attackTime = 0.001, releaseTime = 0.2;
+    float limiterThresh = 1, attackTime = 0.001, releaseTime = 0.2, oGain = 1.0;
 
 private:
     

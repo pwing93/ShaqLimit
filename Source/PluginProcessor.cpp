@@ -173,6 +173,8 @@ void ShaqLimitAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuff
             delayBuffer->nextSample();
             
             data[i] = limitedSample;
+            
+            data[i] = data[i] * oGain;
         }
     }
 }
